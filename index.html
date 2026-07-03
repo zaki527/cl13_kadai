@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花畑の朝</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .page-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px; 
+            aspect-ratio: 16 / 9; 
+            background-image: url('bg0.png');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .message-box {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            background-color: rgba(255, 255, 255, 0.75); 
+            padding: 20px 30px;
+            border-radius: 4px;
+            max-width: 50%;
+        }
+
+        .message-box p {
+            color: #b52a55; 
+            font-size: 2vw; 
+            font-weight: bold;
+            line-height: 1.6;
+            white-space: nowrap;
+        }
+
+        .butterfly {
+            position: absolute;
+            background-image: url('butterfly.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 8%; 
+            aspect-ratio: 1.25 / 1;
+        }
+
+        .bf1 {
+            bottom: 12%;
+            left: 17%;
+            transform: rotate(-15deg);
+        }
+
+        .bf2 {
+            bottom: 25%;
+            left: 38%;
+            transform: rotate(5deg);
+        }
+
+        .bf3 {
+            bottom: 10%;
+            left: 60%;
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="message-box">
+            <p>ぽかぽか陽気の穏やかな朝<br>花畑では、蝶々がのんびり飛んでいます</p>
+        </div>
+
+        <div class="butterfly bf1"></div>
+        <div class="butterfly bf2"></div>
+        <div class="butterfly bf3"></div>
+    </div>
+
+</body>
+</html>
